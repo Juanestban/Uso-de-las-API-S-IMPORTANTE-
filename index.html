@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Manjari|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Handbook</title>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <div class="contenido">
+                <div class="logotipo">
+                    <h1>handbook</h1>
+                </div>
+            </div>
+            <div class="contenido contenido2">
+                <nav>
+                    <div class="login">
+                        <p>Correo electronico o telefono</p>
+                        <input type="text">
+                    </div>
+                    <div class="pass">
+                        <p>Contraseña</p>
+                        <input type="password" placeholder="**********">
+                        <p class="Old">¿olvidaste tu cuenta?</p>
+                    </div>
+                    <div class="iniciarSesion">
+                        <input type="button" value="Iniciar sesión">
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="contenidoUsuarios">
+            <div class="usersRegistros">
+                <div class="sesiones">
+                    <div class="title">
+                        <h2>Inicios de sesión recientes</h2>
+                        <p>Haz clic en tu foto o agrega una cuenta</p>
+                    </div>
+                    <div class="sesioneslog">
+                        <div class="usuarios" id="user">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="usersRegistros bordes">asdas</div>
+        </div>
+    </div>
+
+    <div class="ContenidoPersonalizado" id="control">
+        <input type="button" id="Cerrar" onclick="cerrar()" value="x">
+        <div class="contentlogueo" id="temporal">
+            <div class="img">
+                <img src="">
+                <label id="username1"></label>
+            </div>
+            <div class="password">
+                <input type="text" id="pass1" placeholder="Contraseña">
+            </div>
+            <div class="button">
+                <input type="button" id="validacion" value="Iniciar sesión">
+                <p id="respuestaErr"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="dato.js"></script>
+</body>
+
+</html>
